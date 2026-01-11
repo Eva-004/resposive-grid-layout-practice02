@@ -7,7 +7,7 @@
   max-width: 100vw;
   display: flex;
   gap:10px;
-  margin: 0 auto;
+  margin: 0 10px;
 }
 .left{
     width:50%;
@@ -44,9 +44,24 @@
 }
 .down-right{
       width: 50%;
-    background-color: rgb(8, 107, 87);
+    background-color: rgb(9, 61, 52);
      padding: 10px;
     color: white;
     font-size: 40px;
     margin-bottom: 10px;
+}
+@media screen and (max-width:576px) {
+    .container{
+        display: block;
+    }
+    .down{
+        display: block;
+    }
+    .left, .up, .down-left, .down-right{
+        width: 100vw;
+        height: 30vh;
+    }
+    .left{
+        margin-bottom: 10px;
+    }
 }
